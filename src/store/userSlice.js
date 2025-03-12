@@ -6,13 +6,13 @@ const initialState = {
   error: null,
   loading: false,
 };
-
+//http://localhost:5000/login
 // Async thunk to handle login
 export const loginUser = createAsyncThunk(
   '/login',
   async ({ name,username, dob, password }, { rejectWithValue }) => {
     try {
-      const response = await fetch('http://localhost:5000/login', {
+      const response = await fetch('https://userlogindata.glitch.me/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

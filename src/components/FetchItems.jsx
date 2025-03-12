@@ -12,9 +12,10 @@ const FetchItems = () => {
 
     const controller = new AbortController();
     const signal = controller.signal;
+    //http://localhost:8080/items
 
     dispatch(fetchStatusActions.markFetchingStarted());
-    fetch("http://localhost:8080/items", { signal })
+    fetch("https://backenditems.glitch.me/items", { signal })
       .then((res) => res.json())
       .then(({ items }) => {
         dispatch(fetchStatusActions.markFetchDone());

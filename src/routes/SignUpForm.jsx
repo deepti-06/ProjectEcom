@@ -12,7 +12,7 @@ const SignUpForm =()=>{
     const navigate = useNavigate();  // Initialize useNavigate hook
 
 
-
+//http://localhost:5000/register
 
     const handleSignUp =async(e)=>{
         e.preventDefault()
@@ -30,7 +30,7 @@ const SignUpForm =()=>{
         }
     
         try {
-          const response = await fetch('http://localhost:5000/register', {
+          const response = await fetch('https://userlogindata.glitch.me/register', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
