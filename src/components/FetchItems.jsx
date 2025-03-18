@@ -15,7 +15,14 @@ const FetchItems = () => {
     //http://localhost:8080/items
 
     dispatch(fetchStatusActions.markFetchingStarted());
-    fetch("https://backenditems.glitch.me/items", { signal })
+    fetch("https://backenditems.glitch.me/items", { signal,
+      method: 'GET', // or 'POST'
+      headers: {
+        'Content-Type': 'application/json',
+        // Add any other necessary headers here
+      },
+
+     })
       .then((res) => res.json())
       .then(({ items }) => {
         dispatch(fetchStatusActions.markFetchDone());
