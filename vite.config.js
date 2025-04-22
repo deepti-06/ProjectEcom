@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/StyleNest/' // For direct hosting on GitHub Pages, without a subfolder.
+  base: '/styleNest/' // For direct hosting on GitHub Pages, without a subfolder.
 })
