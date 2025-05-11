@@ -512,10 +512,16 @@ justify-content: center;
   margin: 20px 20px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .cardImg{
   width:80%;
   height: 80%;
+}
+.cardText{
+  font-size: medium;
+  font-weight: 500;
+  color:black
 }
 .allCategory{
   display: flex;
@@ -581,3 +587,11 @@ justify-content: center;
 .btn-logout{
   margin-bottom: 20px;
 }
+
+.logoName{
+  font-size: small;
+  font-style: italic;
+  color: #f54e77;
+  text-align: center;
+}
+

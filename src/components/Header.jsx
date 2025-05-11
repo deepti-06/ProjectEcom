@@ -14,11 +14,12 @@ const Header =()=>{
     <div className="container">
       <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
       <Link to="/">
-          <img
+       <h3 className="logoName">StyleNest</h3>
+          {/* <img
             className=" d-flex align-items-center mb-2 mb-lg-0 myntra_home"
             src="images/logo.jpg"
             alt="Myntra Home"
-          />
+          /> */}
         </Link>
         {/* <a href="/" className="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
           <svg className="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>

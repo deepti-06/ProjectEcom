@@ -52,8 +52,9 @@ const router = createBrowserRouter([
 
 
 
-
-]);
+],
+// { basename:"/ProjectEcom"}
+);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

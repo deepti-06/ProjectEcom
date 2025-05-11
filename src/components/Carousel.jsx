@@ -1,16 +1,17 @@
 const Carousel =()=>{
   return(
     <>
-    <div id="carouselExampleFade" className="carousel slide carousel-fade carousel_container" > 
+    <div id="carouselExampleFade" className="carousel slide carousel-fade carousel_container "
+    data-bs-ride="carousel"  > 
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="images/img1.jpg" className="d-block w-100" alt="img1"/>
+      <img src="images/img6.jpg" className="d-block w-100" alt="img1"/>
     </div>
     <div className="carousel-item">
-      <img src="images/img2.jpg" className="d-block w-100" alt="img2"/>
+      <img src="images/img5.jpg" className="d-block w-100" alt="img2"/>
     </div>
     <div className="carousel-item">
-      <img src="images/img3.jpg" className="d-block w-100" alt="img3"/>
+      <img src="images/img4.jpg" className="d-block w-100" alt="img3"/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">

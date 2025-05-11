@@ -8,6 +8,8 @@ const LoadingSpinner = () => {
       >
         <span className="visually-hidden">Loading...</span>
       </div>
+      <p style={{marginLeft:"10px", font:"20px"}}>Fetching...Please wait..!!</p>
+
     </div>
   );
 };

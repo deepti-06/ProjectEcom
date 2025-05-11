@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
+import CategoryCards from "./CategoryCards";
 
 const HeroComponent = () => {
   return (
@@ -7,15 +8,39 @@ const HeroComponent = () => {
       <div className="hero_container">
         <img src="images/hero.jpg " className="hero_image" alt="hero image" />
       </div>
-
+     
       <div className="category">
         <span className="category_name">Shop By Category</span>
       </div>
       <div className="card_category">
-        <Link
+        <CategoryCards 
+        link="/apparels"
+        image="images/11.jpg"
+        title="Clothing"   
+        
+        />
+         <CategoryCards 
+        link="/beauty&skin"
+        image="images/9.jpg"
+        title="MakeUp"   
+        
+        />
+         <CategoryCards 
+        link="/footwears"
+        image="images/16.jpg"
+        title="Footwears"   
+        
+        />
+         <CategoryCards 
+        link="/bags"
+        image="images/14.jpg"
+        title="Backpacks"   
+        
+        />
+        {/* <Link
           to="/apparels"
           className="card "
-          style={{ width: "12rem", height: "18rem", textDecoration: "none" }}
+          style={{ width: "100%", height: "100%", textDecoration: "none" }}
         >
           <img
             src="images/11.jpg"
@@ -30,42 +55,42 @@ const HeroComponent = () => {
           to="/beauty&skin"
           className="card "
           style={{
-            width: "12rem",
-            height: "18rem",
+            width: "100%",
+            height: "100%",
             marginLeft: "50px",
             textDecoration: "none",
           }}
         >
-          <img src="images/9.jpg" class="card-img-top cardImg" alt="makeup" />
+          <img src="images/9.jpg" class="card-img-top cardImg" style={{height:"50%"}} alt="makeup" />
           <div class="card-body">
-            <p class="card-text">MakeUp</p>
+            <p class="card-text ">MakeUp</p>
           </div>
         </Link>
         <Link
           to="/footwears"
           className="card "
           style={{
-            width: "12rem",
-            height: "18rem",
+            width: "100%",
+            height: "100%",
             marginLeft: "50px",
             textDecoration: "none",
           }}
         >
           <img
-            src="images/12.jpg"
-            class="card-img-top cardImg"
+            src="images/16.jpg"
+            class="card-img-top cardImg "
             alt="footwear"
           />
           <div class="card-body">
-            <p class="card-text">Footwears</p>
+            <p class="card-text cardTextName">Footwears</p>
           </div>
         </Link>
         <Link
           to="/bags"
           className="card "
           style={{
-            width: "12rem",
-            height: "18rem",
+            width: "100%",
+            height: "100%",
             marginLeft: "50px",
             textDecoration: "none",
           }}
@@ -76,9 +101,9 @@ const HeroComponent = () => {
             alt="footwear"
           />
           <div class="card-body">
-            <p class="card-text">Backpacks</p>
+            <p class="card-text" >Backpacks</p>
           </div>
-        </Link>
+        </Link> */}
       </div>
       <div className="allCategory">
         <Link to ="/all">
@@ -86,6 +111,7 @@ const HeroComponent = () => {
        </Link>
         
       </div>
+      
     </>
   );
 };

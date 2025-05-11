@@ -21,13 +21,15 @@ const Header1 = () => {
     <>
       <header className="p-3 text-bg-light" >
         <div className="container">
-          <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <Link to="/">
+          <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
+            <Link to="/" className="text-decoration-none">
               <img
                 className=" d-flex align-items-center mb-2 mb-lg-0 myntra_home"
                 src="images/logo.jpg"
                 alt="Myntra Home"
               />
+              <h6 className="logoName ">StyleNest</h6>
+
             </Link>
 
             <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
